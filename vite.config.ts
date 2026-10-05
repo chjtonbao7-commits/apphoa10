@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
-import { nitro } from 'nitropack/vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact from '@vitejs/plugin-react'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
+import netlify from '@netlify/vite-plugin-tanstack-start'
 
 const config = defineConfig({
   plugins: [
@@ -11,7 +11,7 @@ const config = defineConfig({
       projects: ['./tsconfig.json'],
     }),
     tailwindcss(),
-    nitro(),
+    netlify(),
     tanstackStart(),
     viteReact(),
   ],
