@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev --port 3000",
-    "build": "vite build && npx tanstack-start build"
+    "build": "vite build"
   },
   "dependencies": {
     "@tailwindcss/vite": "4.2.2",
